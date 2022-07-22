@@ -1,21 +1,55 @@
-/*@font-face{
-font-family: 'Open Sans Light Condensed'; 
-    src: url(../fonts/static/OpenSans_Condensed/OpenSans_Condensed-ExtraBoldItalic.ttf) format("truetype")
+@font-face{
+font-family: 'OpenSans Bold'; 
+    src: url(../fonts/static/OpenSans/OpenSans-Bold.ttf) format("truetype")
 }
-*/
+@font-face{
+font-family: 'OpenSans ExtraBold'; 
+    src: url(../fonts/static/OpenSans/OpenSans-ExtraBold.ttf) format("truetype")
+}
+@font-face{
+font-family: 'OpenSans Regular'; 
+    src: url(../fonts/static/OpenSans/OpenSans-Regular.ttf) format("truetype")
+}
+@font-face{
+font-family: 'OpenSans-Semibold'; 
+    src: url(../fonts/static/OpenSans/OpenSans-SemiBold.ttf) format("truetype")
+}
+@font-face{
+font-family: 'OpenSans-Italic'; 
+    src: url(../fonts/static/OpenSans/OpenSans-Italic.ttf) format("truetype")
+}
 
+
+
+
+
+
+
+content{
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+/*img:hover
+{transform: rotateY(170deg);
+}*/
 body{
   padding: 0px;
   margin: 0px;
 }
 p{
   font-weight: 16px;
-  font-family: 'Open Sans Light Condensed',serif;
+  font-family: 'OpenSans Regular',serif;
 }
 h3{
   font-size: 30px;
   text-transform: uppercase;
+  font-family:'OpenSans-SemiBold';
+   
 }
+/*h3:hover{
+  transform: rotateX(320deg);
+}*/
 /* body{
 
 background-color:#F6F2F2;
@@ -47,6 +81,7 @@ nav{
  margin: 0 auto;
  align-items: stretch;
   height: 89px;
+  font-family: 'OpenSans Bold';
 
  
   justify-content: center;
@@ -128,18 +163,21 @@ h1{
   height:117px;
   font-size: 42px;
   text-transform: uppercase;
+  font-family:OpenSans ExtraBold;
   
 }
 
 h2{
   font-size: 42px;
   text-transform: uppercase;
+  font-family: OpenSans Bold;
 }
 
 .right{
 display: flex;  
 width: 551px;
 height: 356px;
+filter: drop-shadow(0px 0px 10px black); 
 
 }
 .first{
@@ -154,13 +192,16 @@ padding-top: 103px;
 }
 .cont{
   background-color: red;
-  padding: 14px 63px;
+  padding: 16px 72px;
   width: 227px;
   height: 55px;
   box-sizing: border-box;
   
   
 
+}
+.cont:hover{
+  filter: 0.4;
 }
 
 .cont a {
@@ -197,7 +238,7 @@ padding-top: 103px;
 
 display: flex;  
 flex-direction: column;
-height: 184px;
+height: 226px;
 width: 299px;
 
 margin-right: 4px;
@@ -207,6 +248,7 @@ margin-right: 4px;
 .right2 div div img{
   width: 37px;
   height: 37px;
+
 }
 .right2 div div h3{
   margin: 13px 0px;
@@ -269,9 +311,11 @@ margin: 0px auto;
   justify-content: center;
 text-transform: uppercase;
 list-style-type: none;
-
-
 }
+.forth div ul li{
+  font-family:'OpenSans-Semibold';
+}
+
 .forth div ul:first-of-type li{
   margin: 0 10px;
 }
@@ -333,6 +377,7 @@ max-height: 73px;
 .hr3{
 display: inline-block;
 flex-direction: row;
+margin: 66px 0px;
 
   width: 132px;
   height: 5px;
@@ -379,7 +424,7 @@ flex-direction: row;
   /*align-items: flex-end; */
   max-width: 1265px;
   height: 462px;
-  margin: 0px auto;
+  margin: 100px auto;
  
 }
 .redd{
@@ -459,7 +504,7 @@ color: rgba(255, 255, 255, 0.5);
   flex-wrap: wrap;
   justify-content: space-between;
     font-size: 24px;
-  font-family: cursive;
+  font-family: 'OpenSans-Italic', cursive;
   font-weight: 400;
 
 }
@@ -485,6 +530,7 @@ width: 100%;
   color: black;
   display: flex;
   align-items: center;
+  padding-left: 10px;
   
 
 }
@@ -510,6 +556,9 @@ margin-left: 7%;
   margin: 0px 10px;
   color: white;
   border: 0px;
+  border-radius: 10px;
+      padding: 0px 62px;
+
 }
 
 .mail-box{
@@ -530,6 +579,7 @@ margin-left: 7%;
 }
 .lower div p{
   display: initial;
+
 } 
 
 
@@ -541,6 +591,9 @@ margin-left: 7%;
   width: 135px;
   height: 5px;
   background-color: red;
+    margin-top: 12px ;
+  margin-bottom: 12px ;
+  margin-left: -14px;
 }
 .content-text{
   max-width: 753px;
@@ -606,13 +659,21 @@ padding-left: 10px;
 .tab-right{
 display: flex;
 padding: 100px;
-background-color: black;
+background-color: #2D2D2D;
 width: 40%;
 flex-direction: column;
 color: white;
 flex-wrap: wrap;
 margin-left: 20px;
+height: 61%;
+
 }
+.tab-right p:first-of-type{
+font-family: 'OpenSans Bold';
+text-transform: uppercase;
+}
+
+
 
 .name-mail {
   width: 342px;
@@ -630,10 +691,13 @@ margin-left: 20px;
     width: 100%;
   height: 75px;
   background-color:#FF3F40;
+  font-family: 'OpenSans Bold';
   
 }
 
-
+input{
+  border-radius: 14px;
+}
 
 
 footer{
